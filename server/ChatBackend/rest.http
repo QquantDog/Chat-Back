@@ -1,0 +1,29 @@
+GET http://localhost:3000 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTExMTQ1MDAsImV4cCI6MTcxMTExNDUwNX0.VfOjWD0eJ7536rEENGFaIAic5Y-QH0zoHRxQMilh2OM
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+###
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+###
+DELETE  http://localhost:3000/messages/:messageId
+Content-Type: application/json
+
+###
+POST http://localhost:3000/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTEyMjMyNDUsImV4cCI6MTcxMTIyMzMwNSwiYXVkIjoiNjVmZDY2NzM0OTAwYWJhMzNjOTQxOTViIn0.awv4HPpR9SwSHd1TZf7QXmjpWZUWN4hB-OiQRmDD-ig"
+}
+
+###
+DELETE http://localhost:3000/logout
